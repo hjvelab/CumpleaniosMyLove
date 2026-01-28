@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Un regalo para ti :3 </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="card" onclick="toggleCard()">
+  <div class="inner">
+
+    <!-- PORTADA -->
+    <div class="front">
+      Estef… 💕<br>¿hoy cumples años?
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="back">
+
+      <div class="dedicatoria" id="dedicatoria"></div>
+
+      <div class="carousel">
+        <img src="./imgs/foto6.jpg" class="active">
+        <img src="./imgs/foto5.jpg">
+        <img src="./imgs/foto4.jpg">
+        <img src="./imgs/foto3.jpg">
+        <img src="./imgs/foto2.jpg">
+        <img src="./imgs/foto1.jpg">
+      </div>
+
+      <!-- IMAGEN ESTÁTICA -->
+      <div class="static-image">
+        <img src="./imgs/mishisirous.jpg" alt="Amor">
+      </div>
+
+      <div class="controls">
+        <button onclick="prevImg(event)">◀</button>
+        <button onclick="nextImg(event)">▶</button>
+      </div>
+
+      <p class="footer-text">
+        No hace falta nadie más que tú en mi vida, voy pensando entre la multitud y siempre estás tú.
+        Donde existas, yo te seguiré; te seguiré donde quieras que estés, porque en el universo solo hay una, eres tú. Te amo mi vida :3
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<!-- AUDIO -->
+<audio id="bg-music" loop>
+  <source src="./audio/cumbion.mp3" type="audio/mpeg">
+</audio>
+
+<script src="js/script.js"></script>
+</body>
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="./video/fondo.mp4" type="video/mp4">
+</video>
+</html>
+
